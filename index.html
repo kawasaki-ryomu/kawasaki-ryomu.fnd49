@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>タイミングPKゲーム</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="gameContainer">
+      <div id="guide">
+        <h1>[タイミングPKゲーム]</h1>
+
+        <div id="guideBox">
+          <h2>遊び方</h2>
+
+          <p>① 左・中央・右を選択</p>
+          <p>② ゲージを見ながらシュート！</p>
+          <p>③ PERFECT → 2点獲得</p>
+          <p>④ GOOD → ゴール成功で1点</p>
+          <p>⑤ MISS → 0点</p>
+
+          <p class="guideLast">30秒で高得点を目指そう!</p>
+        </div>
+      </div>
+
+      <div id="field">
+        <div id="keeper"></div>
+        <p id="score">得点: 0</p>
+        <p id="result"></p>
+        <button id="reset">スタート</button>
+        <div class="button">
+          <button id="left">左</button>
+          <button id="center">中央</button>
+          <button id="right">右</button>
+        </div>
+        <button id="shootBtn">シュート！</button>
+        <p id="timer">残り時間: 30秒</p>
+        <div id="ball">⚽</div>
+        <div id="keeperIcon">🧤</div>
+        <div id="goal"></div>
+        <p id="countdown"></p>
+        <div id="gauge">
+          <div id="marker">▼</div>
+          <div class="decision">
+            <p class="miss">MISS</p>
+            <p class="good">GOOD</p>
+            <p id="perfect">P</p>
+            <p class="good">GOOD</p>
+            <p class="miss">MISS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
